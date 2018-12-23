@@ -1,0 +1,44 @@
+extends partials/article
+
+block articleBody
+    .row  
+        .columns.medium-8
+            article#article-body
+                != content
+        .columns.medium-4
+            aside.toc
+                .gallery
+                    a(href=getImgPath(document, document.productBanner), title=getPageTitle()).gallery-link
+                        img(src=getImgPath(document, document.productBanner), alt=getPageTitle()).banner
+                    ul.mfp-hide.gallery-slides
+                        li
+                            a(href=getImgPath(document, document.productBanner), title=getPageTitle())
+                ul.menu.vertical                    
+                    li.toc-level-1
+                        a(href=document.docLink)
+                            i.fa.fa-fw.fa-book
+                            | Read the documentation
+                    li.toc-level-1
+                        a(href=document.bugLink)
+                            i.fa.fa-fw.fa-bug
+                            | Report a bug
+                    li.toc-level-1
+                        a(href=document.askLink) 
+                            i.fa.fa-fw.fa-question-circle
+                            | Ask a question
+                    li.toc-level-1
+                        a(href=document.marketplaceLink) 
+                            i.fa.fa-fw.fa-shopping-bag
+                            | Visit the marketplace
+                    li.toc-level-1
+                        a(href=getProtectedEmailLink('support@stellaritysoftware.com'), onfocus=getEmailProtectionCode() onMouseOver=getEmailProtectionCode())
+                            i.fa.fa-fw.fa-envelope
+                            | Send an email
+                    li.toc-level-1.gallery
+                        a(href="javascript:void(0)").gallery-link
+                            i.fa.fa-fw.fa-picture-o
+                            | View screenshots (#{document.screenshots.length})
+                        ul.mfp-hide.gallery-slides
+                            each screenshot in document.screenshots
+                                li
+                                    a(href=getImgPath(document, screenshot.src), title=screenshot.title)

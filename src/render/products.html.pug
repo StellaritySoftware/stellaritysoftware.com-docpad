@@ -1,0 +1,15 @@
+---
+layout: article
+summary: List of our products
+---
+
+.row
+    table.addon-table        
+        each product in getCollection("products").toJSON()
+            tr
+                td.addon-logo-cell
+                    a(href=product.url)
+                        img(alt=`${product.productName} logo`, src=getImgPath(product, product.productLogo)).addon-logo
+                td.addon-name-cell
+                    a(href=product.url) #{product.productName}
+                    .subheader #{product.summary}

@@ -1,0 +1,47 @@
+//- Top-bar
+nav.top-bar
+    //- Title Area
+    div
+        .top-bar-title
+            h1
+                a(href="/index.html")
+                    img(alt="stellarity logo", src="/img/stellarity-logo.png") 
+                    | Stellarity Software
+        div(style="right: 1rem; top: 0.75rem; position: absolute")
+            div(data-responsive-toggle="responsive-menu", data-hide-for="medium")
+                span.menu-icon(type="button", data-toggle)
+    #responsive-menu
+        .top-bar-left
+            //- Right Nav Section
+            ul.menu.vertical.medium-horizontal(data-responsive-menu="accordion medium-dropdown")
+                li
+                    a(href="/products.html") Products
+                    ul.menu.vertical
+                        each product in getCollection("products").toJSON()
+                            li
+                                a(href= product.url) #{product.productName}
+                li
+                    a(href="/services.html") Services
+                    ul.menu.vertical
+                        li
+                            a(href="/services.html#addon-development") Addon Development
+                        li
+                            a(href="/services.html#addon-support") Addon Support
+                        //-
+                            li
+                                a(href="/404.html") 404
+                li
+                    a(href="/support.html") Support
+                li
+                    a(href="/about.html") About
+        //- 
+         searchbox is temporary disabled because it requires scripting on the server
+         ul.right
+            li.has-form
+                form
+                    .row.collapse
+                        .small-10.columns
+                            input(type="text", placeholder="Find Stuff", name="q")
+                        .small-2.columns
+                            a.button.expand(href="#")
+                                img(src="/img/search.png", style="width:1rem")

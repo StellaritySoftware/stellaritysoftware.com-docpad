@@ -1,0 +1,41 @@
+.scroll-to-top
+footer
+    .row.text-center
+        .medium-4.columns
+            h4 Products
+            ul.no-bullet
+                each product in getCollection("products").toJSON()
+                    li
+                        a(href= product.url) #{product.productName}
+        .medium-4.columns
+            h4 Services
+            ul.no-bullet
+                li
+                    a(href="/services.html#addon-development") Addon Development
+                li
+                    a(href="/services.html#addon-support") Addon Support
+        .medium-4.columns
+            h4 Contact
+            ul.home-social
+                //-
+                    li
+                        a(href="#").google-plus
+                    li
+                        a(href="#").linkedin
+                    li
+                        a(href="https://twitter.com/stellaritysoft").twitter
+                    li
+                        a(href="https://www.facebook.com/StellaritySoftware").facebook
+                li
+                    a(href=getProtectedEmailLink("contact@stellaritysoftware.com"), onfocus=getEmailProtectionCode() onMouseOver=getEmailProtectionCode()).email
+    #copyright.text-center
+        small Copyright © 2014 
+            a(href="http://stellaritysoftware.com/")  Stellarity Software
+            | , All Rights Reserved
+!= getBlock("scripts").toHTML()
+script(src="/js/vendor/jquery.min.js")
+script(src="/js/foundation.js")
+script(src="/js/jquery.magnific-popup.min.js")
+script(src="/js/app.js")
+script
+    include ../../static/js/scroll-to-top.min.js
