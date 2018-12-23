@@ -25,7 +25,7 @@ This plugin allows [Atlassian Bamboo](http://www.atlassian.com/software/bamboo) 
 * Works out of the box
 * Supports remote agents with no additional configuration
 * Can be run on Windows, Linux and Mac OSX
-* Supports TFS 2008-2017
+* Supports TFS 2008-2018
 * Works with cloud-based TFS services like [visualstudio.com](http://visualstudio.com)
 * Supports deployment plans
 * Supports Bamboo variables in repository path and url
