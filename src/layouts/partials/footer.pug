@@ -1,20 +1,13 @@
 .scroll-to-top
 footer
     .row.text-center
-        .medium-4.columns
+        .medium-6.columns
             h4 Products
             ul.no-bullet
                 each product in getCollection("products").toJSON()
                     li
                         a(href= product.url) #{product.productName}
-        .medium-4.columns
-            h4 Services
-            ul.no-bullet
-                li
-                    a(href="/services.html#addon-development") Addon Development
-                li
-                    a(href="/services.html#addon-support") Addon Support
-        .medium-4.columns
+        .medium-6.columns
             h4 Contact
             ul.home-social
                 //-
@@ -29,7 +22,7 @@ footer
                 li
                     a(href=getProtectedEmailLink("contact@stellaritysoftware.com"), onfocus=getEmailProtectionCode() onMouseOver=getEmailProtectionCode()).email
     #copyright.text-center
-        small Copyright © 2014 
+        small Copyright © 2014-2019 
             a(href="http://stellaritysoftware.com/")  Stellarity Software
             | , All Rights Reserved
 != getBlock("scripts").toHTML()
