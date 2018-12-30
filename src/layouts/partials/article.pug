@@ -3,19 +3,18 @@ extends page
 block pageBody
     #page
         header
-            .row
-                .columns
-                    nav
-                        ul.breadcrumbs(itemscope, itemtype="http://schema.org/BreadcrumbList")
-                            each breadcrumb, index in getBreadcrumbs()
-                                li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
-                                    a(href=breadcrumb.url, itemprop="item")
-                                        span(itemprop="name")=breadcrumb.name
-                                    meta(itemprop="position", content= index + 1)
-                    if document.productLogo                                    
-                        img(alt="#{document.productName} logo", src=getImgPath(document, document.productLogo), itemprop="image").addon-logo.float-left
-                    h1(itemprop="name")=getPageName()
-                    if document.summary
-                        .subheader #{document.summary}
+            .row.columns
+                nav
+                    ul.breadcrumbs(itemscope, itemtype="http://schema.org/BreadcrumbList")
+                        each breadcrumb, index in getBreadcrumbs()
+                            li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
+                                a(href=breadcrumb.url, itemprop="item")
+                                    span(itemprop="name")=breadcrumb.name
+                                meta(itemprop="position", content= index + 1)
+                if document.productLogo                                    
+                    img(alt="#{document.productName} logo", src=getImgPath(document, document.productLogo), itemprop="image").addon-logo.float-left
+                h1(itemprop="name")=getPageName()
+                if document.summary
+                    .subheader #{document.summary}
         #content
             block articleBody
