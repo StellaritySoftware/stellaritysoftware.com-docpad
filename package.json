@@ -12,7 +12,7 @@
     "docpad-plugin-coffeescript": "~2.7.0",
     "docpad-plugin-marked": "~2.5.0",
     "docpad-plugin-pug": "~2.2.0",
-    "docpad-plugin-serve": "~2.0.1",
+    "docpad-plugin-serve": "github:docpad/docpad-plugin-serve#v2.0.2",
     "docpad-plugin-stylus": "~2.14.0",
     "jstransformer-markdown-it": "~2.1.0"
   },
