@@ -34,5 +34,5 @@ This plugin allows [Atlassian Bamboo](http://www.atlassian.com/software/bamboo) 
 * TFS branches discovery
 * Supports web repository viewer (provides links to commits)
 
-##### Note 
-A Bamboo restart is required to install/uninstall the app.
+##### Note
+A Bamboo restart is required to install/uninstall the app!
