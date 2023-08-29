@@ -1,11 +1,1 @@
 //- Top-notice
-nav#top-notice
-    div.callout.success(data-closable)
-        h6 CVE-2021-44228 (Log4j vulnarability) statement
-        p All our addons use Bamboo's log4j facility and don't make any changes to it, add JMS Appender or include javax.jms API in the CLASSPATH. 
-            | So you're safe unless someone has write access to the Bamboo's log4j.properties file. 
-            | Read 
-            a(href="https://confluence.atlassian.com/kb/faq-for-cve-2021-44228-1103069406.html") FAQ for CVE-2021-44228 
-            | from Atlassian for additional information.
-        button.close-button(aria-label="Dismiss alert" type="button" data-close)
-            span(aria-hidden="true") &times;
