@@ -2,7 +2,7 @@
 layout: product
 productName: FTP Task
 hostName: Bamboo
-summary: Upload and download files from FTP servers
+summary: Upload and download files from FTP/SFTP servers
 productLogo: logo.png
 productBanner: banner.png
 docLink: https://bitbucket.org/stellaritysoftware/ftp-task/wiki/Home
@@ -17,7 +17,7 @@ screenshots: [
     ]
 ---
 
-With this addon (plugin) you can easily upload and download files from FTP servers.
+With this addon (plugin) you can easily upload and download files from FTP/SFTP servers.
 
 ##### Features
 * Automatic retry in case of network errors
@@ -26,3 +26,8 @@ With this addon (plugin) you can easily upload and download files from FTP serve
 * SFTP support
 * Bamboo variables substitution
 * Can be used in deployment plans
+
+##### Compatibility
+* Version 1.2.x => Bamboo 8.0-9.x (DC only)
+* Version 1.1.x => Bamboo 6.0-9.5
+* Version 1.0.x => Bamboo 5.0-5.x
