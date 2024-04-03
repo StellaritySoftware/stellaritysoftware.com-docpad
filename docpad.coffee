@@ -13,6 +13,7 @@ docpadConfig = {
         getBreadcrumbs: -> getBreadcrumbs this
         getPageName: -> getPageName @document
         getImgPath: (document, img) -> getImgPath document, img
+        getUrl: -> getUrl @document
     collections:
         products: -> @getCollection("html").findAll({layout: "product"}, [productName:1])
 
@@ -26,6 +27,12 @@ docpadConfig = {
 
 # Export the DocPad Configuration
 module.exports = docpadConfig
+
+cononizeUrl = (url) ->
+    if url.endsWith("index.html") then "" else url
+
+getUrl = (document) ->
+    'https://www.stellaritysoftware.com' + cononizeUrl(document.url)
 
 getToc = (html) ->
     tokens = html.match /<h\d.*?>.*?<\/h\d>/ig
