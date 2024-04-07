@@ -16,7 +16,7 @@ screenshots: [
     ]
 ---
 
-[Boost](http://www.boost.org) is a large collection of free peer-reviewed portable C++ source libraries. There are many useful libraries. One of those libraries is [Boost::Test](http://www.boost.org/doc/libs/release/libs/test), a library for writing and organizing C++ unit tests. This addon (plugin) provides integration of [Boost::Test C++ Framework](http://www.boost.org/doc/libs/release/libs/test) with [Atlassian Bamboo](http://www.atlassian.com/software/bamboo).
+[Boost](https://www.boost.org) is a large collection of free peer-reviewed portable C++ source libraries. There are many useful libraries. One of those libraries is [Boost::Test](https://www.boost.org/doc/libs/release/libs/test), a library for writing and organizing C++ unit tests. This addon (plugin) provides integration of [Boost::Test C++ Framework](https://www.boost.org/doc/libs/release/libs/test) with [Atlassian Bamboo](https://www.atlassian.com/software/bamboo).
 
 ##### Features
 * Run tests faster using parallel execution

@@ -17,7 +17,7 @@ screenshots: [
     ]
 ---
 
-[Windows PowerShell](http://en.wikipedia.org/wiki/Windows_PowerShell) is a mighty script system and now it can be used for building, deploying and everything else in [Atlassian Bamboo](http://www.atlassian.com/software/bamboo). You can easily create, edit and run scripts directly in Bamboo enjoying syntax highlighting and configuring your scripts with arguments and environment variables. Also scripts benefit from [Bamboo variables](https://confluence.atlassian.com/bamboo/bamboo-variables-289277087.html) substitutions.
+[Windows PowerShell](https://en.wikipedia.org/wiki/Windows_PowerShell) is a mighty script system and now it can be used for building, deploying and everything else in [Atlassian Bamboo](https://www.atlassian.com/software/bamboo). You can easily create, edit and run scripts directly in Bamboo enjoying syntax highlighting and configuring your scripts with arguments and environment variables. Also scripts benefit from [Bamboo variables](https://confluence.atlassian.com/bamboo/bamboo-variables-289277087.html) substitutions.
 
 ##### Features
 * Create, edit and run PowerShell scripts

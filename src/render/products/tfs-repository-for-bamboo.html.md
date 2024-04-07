@@ -19,20 +19,25 @@ screenshots: [
     ]
 ---
 
-This plugin allows [Atlassian Bamboo](http://www.atlassian.com/software/bamboo) to use [TFS](http://en.wikipedia.org/wiki/Team_Foundation_Server) as a source repository for builds. Now it is easier to mix Microsoft and Atlassian solutions or plan migration.
+This plugin allows [Atlassian Bamboo](https://www.atlassian.com/software/bamboo) to use [TFS](https://en.wikipedia.org/wiki/Team_Foundation_Server) as a source repository for builds. Now it is easier to mix Microsoft and Atlassian solutions or plan migration.
 
 ##### Features
 * Works out of the box
 * Supports remote agents with no additional configuration
-* Can be run on Windows, Linux and Mac OSX
+* Can be run on Windows, Linux and macOS
 * Supports TFS 2008-2018 and Azure DevOps 2019-2023
-* Works with cloud-based TFS services like [visualstudio.com](http://visualstudio.com)
+* Works with cloud-based TFS services
 * Supports deployment plans
-* Supports Bamboo variables in repository path and url
+* Supports Bamboo Variables in repository path and URL
 * Regexp to include/exclude files that should be checked out
 * Checkouts from a label or a specific revision
 * TFS branches discovery
-* Supports web repository viewer (provides links to commits)
+* Supports web repository viewer (provides links to commits and diffs)
+
+##### Compatibility
+* Version 1.2.x => Bamboo 8.0-9.x (DC only)
+* Version 1.1.x => Bamboo 5.0-9.5
+* Version 1.0.x => Bamboo 4.2-4.4.8
 
 ##### Note
-A Bamboo restart is required to install/uninstall the app!
+Note: The app type is a repository and thus it requires a Bamboo restart to install/upgrade/uninstall the app!

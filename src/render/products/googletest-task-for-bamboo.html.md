@@ -17,7 +17,7 @@ screenshots: [
     ]
 ---
 
-This addon provides integration of [Google C++ Testing Framework](https://github.com/google/googletest) with [Atlassian Bamboo](http://www.atlassian.com/software/bamboo).
+This addon provides integration of [Google C++ Testing Framework](https://github.com/google/googletest) with [Atlassian Bamboo](https://www.atlassian.com/software/bamboo).
 
 ##### Features
 * Run tests faster using parallel execution
