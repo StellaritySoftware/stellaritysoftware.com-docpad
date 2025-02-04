@@ -33,7 +33,7 @@ screenshots: [
 * Run as a different user
 
 ##### Compatibility
-* Version 1.3.x => Bamboo 8.0-9.x (DC only)
+* Version 1.3.x => Bamboo 8.0-10.x (DC only)
 * Version 1.2.x => Bamboo 6.0-9.5
 * Version 1.1.x => Bamboo 5.0-6.x
 * Version 1.0.x => Bamboo 4.2-4.4.8
