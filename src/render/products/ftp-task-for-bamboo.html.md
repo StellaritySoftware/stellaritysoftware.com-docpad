@@ -28,6 +28,6 @@ With this addon (plugin) you can easily upload and download files from FTP/SFTP 
 * Can be used in deployment plans
 
 ##### Compatibility
-* Version 1.2.x => Bamboo 8.0-9.x (DC only)
+* Version 1.2.x => Bamboo 8.0-10.x (DC only)
 * Version 1.1.x => Bamboo 6.0-9.5
 * Version 1.0.x => Bamboo 5.0-5.x
