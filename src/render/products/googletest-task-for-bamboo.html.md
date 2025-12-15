@@ -23,12 +23,13 @@ This addon provides integration of [Google C++ Testing Framework](https://github
 * Run tests faster using parallel execution
 * Define tests by [Ant Style Pattern](https://ant.apache.org/manual/dirtasks.html#patterns)
 * One task for a test runner and a log parser
-* Show parameters of parametrized tests
+* Show parameters of parameterized tests
 * Parse-only mode
 * Customize tests with environment variables
 * Avoid test name collision
 * Configurable test execution timeout
 
 ##### Compatibility
-* Version 1.1.x => Bamboo 8.0-10.x (DC only)
+* Version 1.2.x => Bamboo 12.x (DC only)
+* Version 1.1.x => Bamboo 8.0-11.x (DC only)
 * Version 1.0.x => Bamboo 5.0-9.6

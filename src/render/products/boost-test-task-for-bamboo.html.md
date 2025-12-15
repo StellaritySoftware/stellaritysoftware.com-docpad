@@ -28,5 +28,6 @@ screenshots: [
 * Configurable test execution timeout
 
 ##### Compatibility
-* Version 1.1.x => Bamboo 8.0-10.x (DC only)
+* Version 1.2.x => Bamboo 12.x (DC only)
+* Version 1.1.x => Bamboo 8.0-11.x (DC only)
 * Version 1.0.x => Bamboo 5.0-9.6
